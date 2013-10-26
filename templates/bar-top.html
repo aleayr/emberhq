@@ -1,0 +1,45 @@
+<div class="top-bar">
+    <div class="container">
+        <div class="top-links">
+            <img src="/images/social_phone.png" alt="Phone number"><span>1300 123 123</span>
+            <img src="/images/social_mail.png" alt="Email address"><a href="mailto:hello@silverstack.com">hello@silverstack.com</a>
+            <img src="/images/rowp6.png" alt="Customer login"><a href="http://my.silverstack.com">my.silverstack.com</a>
+        </div>
+        <div class="socailfollow">
+            <a href="http://www.facebook.com/silverstackhq" class="facebook"><i class="icomoon-facebook"></i></a>
+            <a href="http://twitter.com/silverstackhq" class="twitter"><i class="icomoon-twitter"></i></a>
+            <a href="" class="google-plus"><i class="icomoon-google-plus"></i></a>
+            <a href="" class="instagram"><i class="icomoon-instagram"></i></a>
+            <a href="" class="github"><i class="icomoon-github-3"></i></a>
+            <a href="" class="linkedin"><i class="icomoon-linkedin"></i></a>
+            <a href="" class="mail"><i class="icomoon-mail-2"></i></a>
+            <a href="" class="rss"><i class="icomoon-feed-2"></i></a>
+        </div>
+    </div>
+</div>
+<header id="header">
+    <div  class="container">
+        <div class="four columns logo"><a href="/">Silver<span>stack</span></a></div>
+        <nav id="nav-wrap" class="nav-wrap1 twelve columns">
+            <ul id="nav">
+                {% for item in nav.main %}
+                    {% if item.root %}
+                        <li {% if page.getUrl() == item.root %}class="current"{% endif %}><a href="{{ item.root }}">{{ loop.key }}</a>
+                        {% for subitem in item %}
+                            {% if loop.first %}<ul>{% endif %}
+                            {% if loop.key != "root" %}
+                                <li><a href="{{ item.root }}{{ subitem }}">{{ loop.key }}</a></li>
+                            {% endif %}
+                            {% if loop.last %}</ul>{% endif %}
+                        {% endfor %}
+                        </li>
+                    {% else %}
+                        <li {% if page.getUrl() == item %}class="current"{% endif %}><a href="{{ item }}">{{ loop.key }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+        <!-- /nav-wrap -->
+    </div>
+</header>
+<!-- end-header -->

@@ -1,27 +1,47 @@
 {
   "locals": {
-    "url": "http://localhost:8080",
-    "name": "The Wintersmith's blog",
-    "owner": "Someone",
-    "description": "Ramblings of an immor(t)al demigod"
+    "company_name": "Silverstack",
+    "nav": {
+        "main": {
+            "Home": "/",
+            "About": {
+                "root": "/about/",
+                "Why We're Here": "#why",
+                "Meet the Team": "#team",
+                "Our History": "#history",
+                "What People are Saying": "#media",
+                "Come Work for Us": "#workforus"
+            },
+            "Services": {
+                "root": "/services/",
+                "Websites": "#websites",
+                "eCommerce": "#ecommerce",
+                "Mobile": "#mobile",
+                "Applications": "#applications",
+                "Hosting": "#hosting"
+            },
+            "Work": {
+                "root": "/work/",
+                "Portfolio": "#portfolio",
+                "Case Studies": "#casestudies",
+                "Endorsements": "#endorsements"
+            },
+            "Contact": "/contact/"
+        }
+    }
   },
   "plugins": [
-    "./plugins/paginator.coffee"
+    "wintersmith-swig",
+    "wintersmith-less"
   ],
   "require": {
     "moment": "moment",
     "_": "underscore",
     "typogr": "typogr"
   },
-  "jade": {
-    "pretty": true
-  },
   "markdown": {
     "smartLists": true,
     "smartypants": true
-  },
-  "paginator": {
-    "perPage": 3
   },
   "output": "../output"
 }

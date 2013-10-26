@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include 'head.html' %}
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div id="wrap" class="colorskin-0">
+        {% include 'bar-top.html' %}
+        {% block content %}{% endblock %}
+        {% include 'footer.html' %}
+    </div><!-- end-wrap -->
+{% include 'end-page.html' %}
+</body>
+</html>
