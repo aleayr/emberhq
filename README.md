@@ -1,2 +1,2 @@
-emberhq.com
-===========
+Wintersmith generator for silverstack.com
+=========================================
