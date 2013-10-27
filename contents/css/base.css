@@ -75,7 +75,7 @@
 	h3 strong, h4 strong, h5 strong, h6 strong { font-weight:500; }
 	h3 strong { letter-spacing: -0.02em; }
 
-	p { color:#666e74; margin: 0; font-family: Helvetica, Arial; letter-spacing: 0.25px; }
+	p { /*color:#666e74;*/ margin: 0; font-family: Helvetica, Arial; letter-spacing: 0.25px; }
 	p img { margin: 0; }
 	p.lead { font-size: 21px; line-height: 27px; color: #818a92;  }
 	p.magic { font-size: 19px; line-height: 25px; margin: 0; }
@@ -120,7 +120,7 @@
 /* #Links
 ================================================== */
 
-	a, a:visited { color: #0093d0; text-decoration: none; outline: 0; }
+	a, a:visited { color: #006A9D; text-decoration: none; outline: 0; }
 	a:hover, a:focus { color: #ff9900; }
 	p a, p a:visited { line-height: inherit; }
 	a:active { outline:none; opacity: 0.75; }

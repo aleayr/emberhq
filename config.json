@@ -6,11 +6,9 @@
             "Home": "/",
             "About": {
                 "root": "/about/",
-                "Why We're Here": "#why",
-                "Meet the Team": "#team",
+                "Who are we?": "#who",
                 "Our History": "#history",
-                "What People are Saying": "#media",
-                "Come Work for Us": "#workforus"
+                "Careers": "#careers"
             },
             "Services": {
                 "root": "/services/",
