@@ -45,7 +45,7 @@ img.drod { padding:4px; background:#f2f6f8; border-radius: 7px;}
 *+html .blox.dark.bot-blox { margin-bottom:-21px; }
 
 .blox.section-bg1 { background:url(../images/section-bg1.jpg) no-repeat center; }
-.blox.dark.section-bg2 { background:#8a93a4 url(../images/section-bg3.jpg) no-repeat center top; background-size:cover; background-attachment:fixed; min-height:520px; border-top:5px solid #e5e5e5;}
+.blox.dark.section-bg2 { background:#114D69; background-size:cover; background-attachment:fixed; min-height:520px; border-top:5px solid #e5e5e5;}
 .blox.section-bg3 { background:url(../images/section-bg2.jpg) no-repeat center; }
 .blox.section-bg4 { background:url(../images/contact-mpic1.jpg) no-repeat center; }
 .blox.section-bg1, .blox.section-bg4, .blox.section-bg5, .blox.section-bg6  { height:380px; margin-top:0; padding:0; border-top: 1px solid #d9d9d9; }
